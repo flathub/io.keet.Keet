@@ -42,3 +42,5 @@ modules:
           - x86_64
         strip-components: 0
         sha512: 38a60cf7eff1fe8c83ecf4fe18b5524a791efd5edf70f9a6c573927c2fe4101ed3fc96ef3904723c71554bf60fc09cffb62f2c96be425cf2121ed01e40315b1b
+      - type: file
+        path: metainfo.xml
