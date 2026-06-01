@@ -19,6 +19,7 @@
   <url type="bugtracker">https://support.keet.io/technical-support-and-troubleshooting/submit-a-report</url>
 
   <releases>
+    <release date="2026-05-29" version="4.16.1"/>
     <release date="2026-05-28" version="4.16.0"/>
   </releases>
 
