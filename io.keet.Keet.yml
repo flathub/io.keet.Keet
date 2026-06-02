@@ -22,7 +22,7 @@ modules:
   - name: Keet
     buildsystem: simple
     build-commands:
-      - install -Dm644 metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml # TODO(RaisinTen): Use the metainfo file from the archive.
+      - install -Dm644 ${FLATPAK_ID}.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml # TODO(RaisinTen): Use the metainfo file from the archive.
       # - install -Dm644 flatpak/${FLATPAK_ID}.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
       - install -Dm644 flatpak/${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop
       - install -Dm644 flatpak/${FLATPAK_ID}.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png
@@ -53,4 +53,4 @@ modules:
           version-pattern: 'href="((?:\d+\.)+\d+)/"'
           url-template: https://static.keet.io/downloads/$version/Keet-x64-flatpak.tar.gz
       - type: file
-        path: metainfo.xml
+        path: io.keet.Keet.metainfo.xml
