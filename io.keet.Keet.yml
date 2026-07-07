@@ -31,22 +31,22 @@ modules:
       - cp -r ./Keet-*/* /app/lib/${FLATPAK_ID}
     sources:
       - type: archive
-        url: https://static.keet.io/downloads/4.17.2/Keet-arm64-flatpak.tar.gz
+        url: https://static.keet.io/downloads/4.18.0/Keet-arm64-flatpak.tar.gz
         only-arches:
           - aarch64
         strip-components: 0
-        sha512: 2573de24595f575a72cd4d2d7c6bef63a21ed9e5ce7f99ade4f23850fd3d06b175334ed72b3a7dc6c656149f67859ae8f47564c3c1de1260d3d54ac5559282fa
+        sha512: edabb866a80b975b5a1c450f6dbe9bd788fb9b3fe44c7551b745d0f6e13a4d5418cf66aa0cd849c133e85451d4be0b736809e3a9cd1c9e39df4af8690c83725b
         x-checker-data:
           type: html
           url: https://static.keet.io/downloads/
           version-pattern: href="((?:\d+\.)+\d+)/"
           url-template: https://static.keet.io/downloads/$version/Keet-arm64-flatpak.tar.gz
       - type: archive
-        url: https://static.keet.io/downloads/4.17.2/Keet-x64-flatpak.tar.gz
+        url: https://static.keet.io/downloads/4.18.0/Keet-x64-flatpak.tar.gz
         only-arches:
           - x86_64
         strip-components: 0
-        sha512: 4619f81925b9647e308c45ab2d14a6f30eaad86a35598eeaa97ff7517385f4bdb5266b00183abccf1bfd6889b9b9a01c5dd68ca3a2ce1f935162ee7efc8f5c26
+        sha512: 7f3996c79c0893291bdaeda65a7156a7dd88ebd9fab125f0224b5a1d23f051128dfc3ae9d6139738e234eca3b9f390a392d711bb1b5247aa75e8f16e337b23a4
         x-checker-data:
           type: html
           url: https://static.keet.io/downloads/
