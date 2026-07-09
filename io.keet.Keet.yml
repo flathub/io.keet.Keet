@@ -14,7 +14,7 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --socket=pulseaudio
-  - --device=dri
+  - --device=all
   - --talk-name=org.kde.StatusNotifierWatcher
   - --filesystem=xdg-download # Drop this in Keet v4.17
   - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
