@@ -38,8 +38,8 @@ modules:
         sha512: f9ed91d80dc72c8f6d40da856c82ff240fe75af8ce8f51467927371c298806828a41c4a1a998f6242e7f3060b3babd96f8a9113f8239e2833394eb63a7790c75
         x-checker-data:
           type: html
-          url: https://static.keet.io/downloads/
-          version-pattern: href="((?:\d+\.)+\d+)/"
+          url: https://static.keet.io/downloads/latest/version
+          version-pattern: ^\s*((?:\d+\.)+\d+)\s*$
           url-template: https://static.keet.io/downloads/$version/Keet-arm64-flatpak.tar.gz
       - type: archive
         url: https://static.keet.io/downloads/4.21.0/Keet-x64-flatpak.tar.gz
@@ -49,8 +49,8 @@ modules:
         sha512: b18cb0e8360dbc7ddc5783f3f760cb9ec794bb67e81d82124966c55ed95256d0caab183637e99ebd5571a9f46e0676f6db2c736253d76d0239272d8d1f148519
         x-checker-data:
           type: html
-          url: https://static.keet.io/downloads/
-          version-pattern: href="((?:\d+\.)+\d+)/"
+          url: https://static.keet.io/downloads/latest/version
+          version-pattern: ^\s*((?:\d+\.)+\d+)\s*$
           url-template: https://static.keet.io/downloads/$version/Keet-x64-flatpak.tar.gz
       - type: file
         path: io.keet.Keet.metainfo.xml
