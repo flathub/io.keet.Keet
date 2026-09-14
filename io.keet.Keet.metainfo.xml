@@ -52,7 +52,7 @@
   </releases>
 
   <recommends>
-    <display_length compare="ge">600</display_length>
+    <display_length compare="ge">400</display_length>
   </recommends>
   <supports>
     <control>pointing</control>
