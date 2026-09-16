@@ -1,6 +1,6 @@
 id: io.keet.Keet
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '25.08'
@@ -31,22 +31,22 @@ modules:
       - cp -r ./Keet-*/* /app/lib/${FLATPAK_ID}
     sources:
       - type: archive
-        url: https://static.keet.io/downloads/4.21.0/Keet-arm64-flatpak.tar.gz
+        url: https://static.keet.io/downloads/4.22.1/Keet-arm64-flatpak.tar.gz
         only-arches:
           - aarch64
         strip-components: 0
-        sha512: f9ed91d80dc72c8f6d40da856c82ff240fe75af8ce8f51467927371c298806828a41c4a1a998f6242e7f3060b3babd96f8a9113f8239e2833394eb63a7790c75
+        sha512: d2f6dea4bc4e4fa545ba2c5b5d811d4c79dc68ac4f37e2a6e1ce1f1e332363d70030b5e310b10b62a77c49681f9cc53abf637f08b7d3295c970b50fe1529c629
         x-checker-data:
           type: html
           url: https://static.keet.io/downloads/latest/version
           version-pattern: ^\s*((?:\d+\.)+\d+)\s*$
           url-template: https://static.keet.io/downloads/$version/Keet-arm64-flatpak.tar.gz
       - type: archive
-        url: https://static.keet.io/downloads/4.21.0/Keet-x64-flatpak.tar.gz
+        url: https://static.keet.io/downloads/4.22.1/Keet-x64-flatpak.tar.gz
         only-arches:
           - x86_64
         strip-components: 0
-        sha512: b18cb0e8360dbc7ddc5783f3f760cb9ec794bb67e81d82124966c55ed95256d0caab183637e99ebd5571a9f46e0676f6db2c736253d76d0239272d8d1f148519
+        sha512: b9a5bbdbdc21098a69ac002bf0e3b7cca5119835b8135e6d4fe784a08d4a9a9cf709c7179de2a8dfaec55e2b2f5d8cfa7594268fbc8becf1ebd3b566e1a53bed
         x-checker-data:
           type: html
           url: https://static.keet.io/downloads/latest/version
