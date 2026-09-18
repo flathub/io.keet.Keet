@@ -1,5 +1,7 @@
 name: Check for updates
 on:
+  schedule:
+    - cron: '0 */4 * * *' # Run once every 4 hours.
   workflow_dispatch: {}
 jobs:
   flatpak-external-data-checker:
